@@ -10,35 +10,7 @@
   <script type="text/javascript" charset="utf8" src="jquery.min.js"></script>
 
   <!-- Local Style -->
-  <style>
-    div {
-      border: 1px black solid;
-    }
-    body {}
-    .container-full {}
-    .navbar {
-      background-color:green;
-      position:absolute;
-      height:10vh;
-    }
-    .navItem {
-      background-color:green;
-      padding:1vh 3vw;
-    }
-    .img-contact {
-      background-color:red;
-      margin-top:10vh;
-    }
-    .img-contact img {
-      width:100vw;
-      height:50vh;
-    }
-    .redir {}
-    .footer {}
-    .inline {
-      display:inline-block;
-    }
-  </style>
+  <link rel="stylesheet" href="local-style.css">
 
   <!-- Local Script -->
   <script>
@@ -57,32 +29,30 @@
       <a id="navBtn4" class="inline navItem" href="">USERNAME/ACCOUNT</a>
       <a id="navBtn5" class="inline navItem" href="">LOGOUT</a>
     </div>
-    <div class="img-contact">
-      <img src="" alt="Imagen">
+    <div class="contact">
       <form id="contactForm">
+        <h2 class="title" style="padding-top:3vh;">Todos somos parte de la red.</h2>
         <input type="text" placeholder="Tu Nombre">
         <input type="email" placeholder="Tu correo">
         <input type="text" placeholder="Tu celular">
         <input type="submit" value="¡Unirse a la red!">
+      </form>
     </div>
     <div class="redir">
-      <h3>¿Que es REDIR?</h3>
-      <p class="justify">REDIR es ................................................................................................................................................................</p>
-      <p class="justify">blablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablablabla</p>
+      <h3 class="title">!Bienvenidos a REDIR!</h3>
+      <p class="justify">REDIR es una comunidad, una red. Una red para interactuar mas con nuestros amigos, vecinos y colegas. Una red para compartir informacion y promover el dialogo entre miembros. Una red para ayudar al medio ambiente, pero sobre todo a nuestr<!---->a<!----> ciudad<!--planeta-->. Buscamos ayudar tanto a los usuarios de nuestro servicio, como al trafico de nuestr<!---->a<!----> ciudad<!--planeta-->. Buscamos compartir los recursos para mantener habitos y un mundo saludable.</p>
+      <p class="justify">?Porque REDIR? REDIR busca ser mas que solo un medio de transporte. Busca ser una comunidad de personas interesadas en ayudar, en convivir y en protegerse uno al otro. Busca fortalecer las relaciones de nuestr<!---->a<!----> ciudad<!--planeta-->. Con el fin de vivir en planeta mejor donde uno pueda confiar en sus vecinos.</p>
     </div>
     <div class="download">
-      <button id="downloadBtn">Descargar App</button>
+      <a id="downloadBtn" href="">!Descargar nuestra App!</a>
     </div>
     <div class="footer">
       <div class="info">
+        <h5 class="title">Conoce mas sobre nosotros</h5>
         <p>Monterrey, Nuevo Leon</p>
         <p>REDIR __(SA?)__, 2019</p>
       </div>
-      <!-- <div class="contact">
-        <form id="contactForm">
-      </div> -->
     </div>
   </div>
-  <!-- <h1 style="text-align:center;color:red;margin:auto;margin-top:25vh;">Hola, bienvenid@ a REDIR!</h1> -->
 </body>
 </html>
