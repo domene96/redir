@@ -5,7 +5,7 @@ if(empty($_POST['name'])      ||
    empty($_POST['phone'])     ||
    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))
    {
-   echo "No arguments Provided!";
+   echo "Falto algun campo.";
    return false;
    }
 
@@ -17,8 +17,8 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 
 // Create the email and send the message
 $to = "redir@domene96.com";
-$email_subject = "Subscriber:\t$name";
-$email_body = "You have received a new message from your website contact form.\n\nHere are the details:\n\nName: $name\n\nEmail: $email_address\n\n$phoneos\tPhone: $phone\n\nMessage:\n$message";
+$email_subject = "Subscriber: $name";
+$email_body = "You have received a new message from your website contact form.\n\nHere are the details:\n\nName: $name\n\nEmail: $email_address\n\n$phoneos Phone: $phone\n\nMessage:\n$message";
 // $headers = "From: noreply@domene96.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 // $headers .= "Reply-To: $email_address";
 $headers = "From: $email_address";
