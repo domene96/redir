@@ -1,4 +1,6 @@
 <?php
+require 'establecerConexion.php';
+
 // Check for empty fields
 if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
@@ -14,6 +16,10 @@ $email_address = strip_tags(htmlspecialchars($_POST['email']));
 $phone = strip_tags(htmlspecialchars($_POST['phone']));
 $phoneos = strip_tags(htmlspecialchars($_POST['phoneos']));
 $message = strip_tags(htmlspecialchars($_POST['message']));
+
+// Log data to DB
+$sql = "INSERT INTO subscribers (name, email, phone, phoneos, message) VALUES ('$name','$email_address','$phone','$phoneos','$message')";
+mysqli_query($conn, $sql);
 
 // Create the email and send the message
 $to = "redir@domene96.com";
